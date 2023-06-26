@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Can Multiple programs open the same file?
 </title>
-<meta name="description" content="You can definitely open a file for reading more than once, either in the same program, or in different programs. It should have no effect on the program(s).Its okay to ACCESS the file from two different programs, as long as you dont try to MODIFY it from two different programs.The same file can be opened more than once in the same program (or in different programs). Each instance of the open file has its own file pointer that can be manipulated independently.no, generally it is not safe to do this! you need to obtain an exclusive write lock for each process--that implies that all the other processes will have to wait while one process is writing to the file.. the more I/O intensive processes you have, the longer the wait time.Yes, but why didnt you just try it? (Might actually be OS dependent.) If you want multiple offsets within the file to read, mmap() may be an option too, depending on your OS. Then you can just index into the file using memory addresses.">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content=" Can multiple programs open same file?, Can I open same file multiple times in Python?, Can multiple processes read the same file Linux?, Can you open the same file multiple times in C?, Can you open a file twice?, Can a program have multiple files?, How many files can be opened at the same time in Linux?, Can multiple processes run in the same memory space?, Can a file be read by multiple threads? ">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

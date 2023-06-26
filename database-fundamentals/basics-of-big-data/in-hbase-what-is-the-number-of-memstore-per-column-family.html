@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>In HBase, what is the number of MemStore per column family?
 </title>
-<meta name="description" content="Basically, for HBase, the HFile is the underlying storage format. Per column family, there is one MemStore.The table that is represented by Table 1 has two column families: cfd and cfi. The cfd family has two columns with qualifiers cqnm and cqv. A column in HBase is referenced by using family:qualifier . The cfi column family has one column: cqdesc.Explanation. A single HF file can be associated with only one column family.An HBase table is made of column families which are the logical and physical grouping of columns. The columns in one family are stored separately from the columns in another family. If you have data that is not often queried, assign that data to a separate column family.HBase is a column-oriented non-relational database management system that runs on top of Hadoop Distributed File System (HDFS). HBase provides a fault-tolerant way of storing sparse data sets, which are common in many big data use cases.">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content=" How many column families does HBase have?, How many HF files one column family in HBase can have?, What is column family in HBase?, Is HBase a column family database?, What is column family data store?, Is HBase wide column store?, Is a column a family?, How do I create a column family in HBase?, How data is stored in HBase? ">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">

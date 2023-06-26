@@ -22,9 +22,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Given the following definition about the join transformation in Apache Spark:def join[W](other:RDD[(K, W)]):RDD[(K, (V, W))]Where join operation is used for joining two datasets. When it is called on datasets of type (K, V) and (K, W), it returns a dataset of (K, (V, W)) pairs with all pairs of elements for each key.Output the result of joinrdd, when the following code is run.val rdd1 = sc.parallelize(Seq((m, 55), (m, 56), (e, 57), (e, 58), (s, 59), (s, 54)))val rdd2 = sc.parallelize(Seq((m, 60), (m, 65), (s, 61), (s, 62), (h, 63), (h, 64)))val joinrdd = rdd1.join(rdd2)joinrdd.collect
 </title>
-<meta name="description" content="There are Three types of operations on RDDs: Transformations, Actions and Shuffles.Wider Transformation Functions such as groupByKey(), aggregateByKey(), aggregate(), join(), repartition() are some examples of a wider transformations.">
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
-<meta name="keywords" content=" What are the different types of RDD?, Which one of the following is wide transformation?, How many types of 3 transformations are there?, Which of the following is an example of RDD wide transformations? ">
 </head>
 <body data-rsssl="1" class="page-template-default custom-background custom-background-white custom-font-enabled single-author" style="padding: 0px 0px 154px;">
 <div id="page" class="site" style="height: auto !important;">
